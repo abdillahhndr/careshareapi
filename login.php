@@ -22,6 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $response['email'] = $row['email'];
         $response['address'] = $row['address'];
         $response['id'] = $row['id'];
+        $response['level'] = $row['level'];
+
     } else {
         $response['value'] = 0;
         $response['message'] = "Username atau password salah";
